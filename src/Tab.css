@@ -1,0 +1,89 @@
+.tabContainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 444px;
+  margin: 10px 0;
+}
+
+.tabButton {
+  background-color: white;
+  border: 0.5px solid #5e20a4;
+  height: 58px;
+  width: 214px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #5e20a4;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 1;
+}
+
+.tabButton:hover {
+  opacity: 1;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 420px 420px;
+  column-gap: 124px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+}
+
+@media (max-width: 800px) {
+  .contentContainer {
+    grid-template-columns: 320px;
+    flex-direction: column;
+  }
+
+  .contentContainer {
+    font-size: 20px;
+  }
+
+  .tabContainer > h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+    width: 280px;
+  }
+
+  .flexContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .flexContainer > h4 {
+    font-size: 24px;
+  }
+
+  .buttonContainer {
+    width: 280px;
+  }
+
+  .tabButton {
+    width: 135px;
+    height: 45px;
+  }
+
+  .flexContainer {
+    width: 280px;
+  }
+}

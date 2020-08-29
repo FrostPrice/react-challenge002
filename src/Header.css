@@ -1,0 +1,134 @@
+html,
+body {
+  background-color: #faf9f7;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: url(./Images/banner_image.png),
+    linear-gradient(to right, #5912ac, #7e49c3, #c86dd7);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navBar {
+  background-color: white;
+  outline: 0.5px solid #c8c8c8;
+  padding-bottom: 19px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .navBar {
+    background: unset;
+    outline: 0;
+  }
+}
+
+.navBarLeft {
+  margin-top: 0;
+  display: grid;
+  grid-template: 1fr / repeat(4, auto);
+  column-gap: 30px;
+  padding-left: 22px;
+  grid-column: 2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .navBarLeft {
+    width: 10%;
+    padding-left: 20px;
+  }
+
+  .navBarLeft > a {
+    display: none;
+  }
+}
+
+.navBarRight {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 32px;
+  grid-column: 3;
+}
+
+@media (max-width: 800px) {
+  .navBarRight {
+    margin-left: 15px;
+  }
+
+  .navBarRight > :nth-last-child(1) {
+    display: none;
+  }
+}
+
+nav > div > a {
+  color: #4a4a4a;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.shareHostButton {
+  width: 235px;
+  height: 44px;
+  background-color: #00c88c;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 25px 0 0;
+}
+
+@media (max-width: 800px) {
+  .shareHostButton {
+    width: 200px;
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+.hapuGreen {
+  width: 48px;
+  height: 66px;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+.menuContent > p {
+  font-size: 24px;
+}
+
+@media (max-width: 800px) {
+  .menuContent {
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: left;
+    justify-items: center;
+    padding-bottom: 60px;
+  }
+
+  .menuContent > h1 {
+    font-size: 24px;
+  }
+
+  .menuContent > p {
+    font-size: 16px;
+  }
+}
